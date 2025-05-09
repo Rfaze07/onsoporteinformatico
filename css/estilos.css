@@ -1,0 +1,330 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sofia&family=Trocchi&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* Estilo para botón hamburguesa */
+.hamburguesa {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    min-width: 48px;
+    max-width: 56px;
+    font-size: 26px;
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 999;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* Modificación del menú para móvil */
+@media screen and (max-width: 768px) {
+    .menu-lateral {
+        width: 200px;
+        min-width: 200px;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 1000;
+    }
+
+    .menu-lateral.abierto {
+        transform: translateX(0);
+    }
+
+    .hamburguesa {
+        display: block;
+    }
+
+    .pantalla {
+        margin-left: 0;
+        padding: 10px;
+    }
+}
+
+h1, h2, h3{
+    text-align: center;
+    color: green;   
+    font-family: 'Roboto', sans-serif;
+}
+h2, h3{
+    text-align: left;
+}
+
+h2{
+    margin-left: 10px;
+}
+
+p{
+    font-family: 'Roboto';
+    text-align: left;
+    margin: 20px;
+}
+
+.seccion {
+    transition: opacity 0.3s ease;
+}
+
+.pantalla{
+    width: 90%;
+    margin-left: 10%;
+}
+
+button{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: green;
+    border: 0;
+    font-family:'Roboto';
+    font-weight: 500;
+    color: white;
+}
+
+button:hover{
+    background-color: darkgreen;
+}
+
+.menu-lateral {
+    width: 10%;
+    background-color: dimgrey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin-right: 10px;
+    z-index: 1000; /* MAYOR que el botón hamburguesa */
+}
+
+.Logo{
+    height: 80px;
+    background-image: url("/images/");
+}
+
+.contenedor {
+    width: 100%; /* Puedes ajustar el ancho según tus necesidades */
+    height: 80px; /* Y la altura */
+    background-image: url("/images/LogoON.jpg");
+    background-size: cover; 
+    background-position: center;
+  }
+
+  .contenedor img {
+    width: 100%; /* Asegúrate de que la imagen ocupe todo el espacio del div */
+    height: 100%;
+    object-fit: contain; /* O object-fit: contain; */
+  }
+
+
+  .btn-seguimiento {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: green;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-seguimiento:hover {
+    background-color: darkgreen;
+}
+
+.form-contacto {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-contacto label {
+    font-weight: bold;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-contacto button {
+    padding: 12px;
+    background-color: green;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.form-contacto button:hover {
+    background-color: darkgreen;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+
+.lista-servicios {
+    list-style: none;
+    padding: 0 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lista-servicios li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.producto-card:hover {
+    transform: scale(1.02);
+}
+
+.producto-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.producto-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: green;
+}
+
+.btn-wsp {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.btn-wsp:hover {
+    background-color: #1ebe57;
+}
+
+.btn-catalogo {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.btn-catalogo:hover {
+    background-color: #0056b3;
+}
+
+.sistema-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.sistema-card h3 {
+    color: green;
+    margin-bottom: 10px;
+}
+
+.sistema-card ul {
+    margin-left: 20px;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.sistema-card ul li::before {
+    content: "🔹";
+    margin-right: 8px;
+}
+
+.logo-sistema {
+    display: block;
+    margin: 0 auto 15px auto;
+    max-width: 120px;
+    height: auto;
+}
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo-grid img {
+    max-width: 180px;
+    max-height: 120px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-grid img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}

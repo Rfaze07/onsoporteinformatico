@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ON Soporte Informatico</title>
+    <link href="/css/estilos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <button id="toggle-menu" class="hamburguesa">&#9776;</button>
+    <div class="menu-lateral">
+      <div class="contenedor"></div>
+      <button onclick="mostrarSeccion('sobre')">Sobre Nosotros</button>
+      <button onclick="mostrarSeccion('reparaciones')">Reparaciones</button>
+      <button onclick="mostrarSeccion('productos')">Productos</button>
+      <button onclick="mostrarSeccion('impresion')">Impresión 3D</button>
+      <button onclick="mostrarSeccion('sistemas')">Sistemas</button>
+      <button onclick="mostrarSeccion('contacto')">Contacto</button>
+      <button onclick="mostrarSeccion('confian')">Empresas</button>
+    </div>
+
+    <div class="pantalla">
+      <div id="sobre" class="seccion">
+        <!-- Aquí va tu texto de presentación actual -->
+        <h1>¿Quiénes somos?</h1>
+        <p>
+          <strong>ON Soporte Informático</strong> es una empresa comprometida
+          con brindar soluciones tecnológicas integrales, adaptadas a las
+          necesidades de cada cliente. Con una trayectoria respaldada por la
+          experiencia y la pasión por la tecnología, nos dedicamos a ofrecer
+          servicios de
+          <strong>reparación y mantenimiento de equipos informáticos</strong>,
+          <strong>impresión 3D</strong>,
+          <strong>venta de productos tecnológicos</strong> y
+          <strong>desarrollo de sistemas a medida</strong>.
+        </p>
+        <p>
+          Nuestro objetivo es ser el aliado tecnológico de empresas,
+          profesionales y particulares que buscan eficiencia, calidad y atención
+          personalizada. Sabemos lo importante que es contar con equipos
+          funcionando correctamente y soluciones digitales que acompañen el
+          crecimiento de cada proyecto. Por eso, trabajamos con responsabilidad,
+          rapidez y un fuerte enfoque en la innovación.
+        </p>
+
+        <h2>Servicios</h2>
+        <ul>
+          <li>
+            <h3>🔧 Reparación y mantenimiento de equipos informáticos</h3>
+            <p>
+              Brindamos soporte técnico para computadoras, notebooks, redes y
+              periféricos. Realizamos diagnósticos precisos, mantenimientos
+              preventivos y correctivos, actualizaciones y configuraciones.
+              Nuestro enfoque es prolongar la vida útil de tus dispositivos y
+              garantizar un rendimiento óptimo.
+            </p>
+          </li>
+          <li>
+            <h3>🧩 Desarrollo de sistemas a medida</h3>
+            <p>
+              Diseñamos e implementamos soluciones digitales pensadas
+              específicamente para cada necesidad. Desde sistemas de gestión
+              hasta plataformas personalizadas, desarrollamos software
+              funcional, escalable y adaptable a distintos entornos, optimizando
+              los procesos de tu negocio.
+            </p>
+          </li>
+          <li>
+            <h3>🛒 Venta de productos tecnológicos</h3>
+            <p>
+              Ofrecemos una amplia variedad de productos seleccionados con
+              criterios de calidad y rendimiento: computadoras, notebooks,
+              accesorios, periféricos, componentes y más. Asesoramos a nuestros
+              clientes para que realicen compras inteligentes, ajustadas a sus
+              objetivos y presupuestos.
+            </p>
+          </li>
+          <li>
+            <h3>🖨️ Impresión 3D</h3>
+            <p>
+              Incorporamos la tecnología de impresión 3D para llevar las ideas a
+              la realidad. Realizamos prototipos, piezas personalizadas,
+              soluciones creativas y funcionales para distintos sectores. Este
+              servicio es ideal tanto para desarrolladores como para
+              particulares que buscan innovación y personalización.
+            </p>
+          </li>
+        </ul>
+
+        <p>
+          En <strong>ON Soporte Informático</strong> no solo reparamos o
+          vendemos, <em>construimos relaciones de confianza</em> basadas en el
+          compromiso, la responsabilidad y la mejora constante. Creemos en el
+          valor del conocimiento aplicado con criterio, y en la importancia de
+          brindar un servicio honesto y profesional.
+        </p>
+
+        <p>
+          📍 Estamos listos para acompañarte en cada paso de tu camino
+          tecnológico.<br />
+          💡 Tu necesidad, nuestra solución.
+        </p>
+      </div>
+
+      <div id="reparaciones" class="seccion" style="display: none">
+        <h1>Servicio Técnico y Reparaciones</h1>
+        <p>
+          En <strong>ON Soporte Informático</strong> ofrecemos un servicio
+          técnico completo para computadoras de escritorio, notebooks, redes y
+          periféricos. Nos especializamos en diagnóstico, mantenimiento
+          preventivo y correctivo, limpieza interna, cambio de piezas,
+          instalación de sistemas operativos, recuperación de datos y
+          optimización del rendimiento.
+        </p>
+        <p>
+          Contamos con técnicos capacitados y herramientas profesionales que nos
+          permiten brindarte una solución rápida, segura y confiable. Atendemos
+          tanto a particulares como a empresas, con atención personalizada y
+          seguimiento del equipo reparado.
+        </p>
+
+        <h2>Servicios que ofrecemos:</h2>
+        <ul class="lista-servicios">
+          <li>🔧 Reparación de notebooks y computadoras de escritorio</li>
+          <li>🔌 Cambios de módulos, pines de carga y conectores</li>
+          <li>📱 Reparación de celulares y tablets</li>
+          <li>💻 Instalación de sistemas operativos (Windows, Linux, etc.)</li>
+          <li>📦 Instalación de paquete Office y programas esenciales</li>
+          <li>🔓 Desbloqueo de computadoras y teléfonos</li>
+          <li>🛠️ Reballing y trabajos avanzados en placa base</li>
+          <li>🔄 Remanufactura de pantallas y componentes electrónicos</li>
+        </ul>
+
+        <p>
+          Utilizamos herramientas profesionales y repuestos de calidad, y
+          trabajamos con responsabilidad para que cada equipo recupere su
+          funcionalidad en el menor tiempo posible.
+        </p>
+
+        <p>
+          Sabemos lo importante que es tu equipo, por eso implementamos un
+          sistema donde podés
+          <strong>consultar el estado de tu reparación en línea</strong>, de
+          forma cómoda y transparente.
+        </p>
+
+        <div style="text-align: center; margin-top: 30px">
+          <a
+            href="https://sstk.ws/?eid=a212c7d8"
+            class="btn-seguimiento"
+            target="_blank"
+            >📦 Consultar Estado de Reparación</a
+          >
+        </div>
+      </div>
+
+      <div id="productos" class="seccion" style="display: none">
+        <h1>Productos Tecnológicos</h1>
+        <p>
+          En <strong>ON Soporte Informático</strong> ofrecemos una selección de
+          productos tecnológicos de calidad. Vendemos notebooks, PCs armadas,
+          periféricos, insumos, accesorios, dispositivos móviles y más. Cada
+          producto es cuidadosamente elegido para asegurar rendimiento,
+          durabilidad y precio justo.
+        </p>
+
+        <div class="contenedor-productos">
+          <div class="producto-card">
+            <img src="images/G513 Carbon.jpg" alt="Producto 1" />
+            <h3>Teclado Logitech G513 Carbon</h3>
+            <a
+              href="https://wa.me/5493364626333?text=Hola,%20quiero%20consultar%20por%20el%20Teclado%20Logitech%20G513%20Carbon"
+              target="_blank"
+              class="btn-wsp"
+              >Consultar por WhatsApp</a
+            >
+          </div>
+
+          <div class="producto-card">
+            <img src="images/ComboRedDragon.jpg" alt="Producto 2" />
+            <h3>Combo Mouse y Teclado Red Dragon</h3>
+            <a
+              href="https://wa.me/5493364626333?text=Hola,%20quiero%20consultar%20por%20el%20Combo%20Mouse%20y%20Teclado%20Red%20Dragon"
+              target="_blank"
+              class="btn-wsp"
+              >Consultar por WhatsApp</a
+            >
+          </div>
+
+          <div class="producto-card">
+            <img src="images/Joystick PS5.jpg" alt="Producto 3" />
+            <h3>Joystick PS5</h3>
+            <a
+              href="https://wa.me/5493364626333?text=Hola,%20quiero%20consultar%20por%20el%20Joystick%20PS5"
+              target="_blank"
+              class="btn-wsp"
+              >Consultar por WhatsApp</a
+            >
+          </div>
+
+          <!-- Agregá más cards copiando este bloque -->
+        </div>
+
+        <div style="text-align: center; margin-top: 40px">
+          <a
+            href="https://link-a-tu-catalogo.com"
+            class="btn-catalogo"
+            target="_blank"
+            >📄 Ver Catálogo Completo</a
+          >
+        </div>
+      </div>
+
+      <div id="impresion" class="seccion" style="display: none">
+        <h1>Impresión 3D</h1>
+        <p>
+          En <strong>ON Soporte Informático</strong> ofrecemos servicios de
+          impresión 3D de alta precisión, ideales para prototipado, piezas
+          personalizadas, repuestos, diseño industrial y objetos decorativos.
+        </p>
+        <p>
+          Trabajamos con filamentos PLA, PETG y otros materiales, y brindamos
+          asesoramiento desde el diseño hasta la impresión final. Nos adaptamos
+          tanto a necesidades técnicas como creativas.
+        </p>
+        <p style="text-align: center; font-weight: bold">
+          Algunos de nuestros trabajos:
+        </p>
+
+        <div class="galeria">
+          <img src="images/Llaveros con QR.jpg" alt="Llaveros con QR" />
+          <img
+            src="images/Llaveros Personalizados.jpg"
+            alt="Llaveros personalizados"
+          />
+          <img src="images/MilkShake.jpg" alt="Vasos Tipo MilkShake" />
+          <img
+            src="images/Vasos Tipo Chop.jpg"
+            alt="Vasos Tipo Chop 500ml personalizables"
+          />
+          <img src="images/Mates.jpg" alt="Mates" />
+          <img src="images/AirForce.jpg" alt="Llaveros AirForce" />
+          <img src="images/PortaBolsas.jpg" alt="PortaBolsas" />
+          <!-- Agregá más imágenes aquí si querés -->
+        </div>
+      </div>
+
+      <div id="sistemas" class="seccion" style="display: none">
+        <h1>Desarrollo de Sistemas y Páginas Web</h1>
+        <p>
+          En <strong>ON Soporte Informático</strong> desarrollamos soluciones
+          digitales pensadas para hacer crecer tu negocio. Creamos sistemas a
+          medida según tus necesidades, ofrecemos sistemas pre-diseñados listos
+          para usar y también desarrollamos páginas web simples para presencia
+          online.
+        </p>
+
+        <h2>🧩 Sistemas a Medida</h2>
+        <p>
+          Desarrollamos sistemas personalizados adaptados al flujo de trabajo de
+          tu emprendimiento o empresa. Ideal para quienes necesitan una solución
+          única, eficiente y escalable. Automatizamos procesos, organizamos tu
+          operación y centralizamos la información en una sola plataforma.
+        </p>
+
+        <h2>🛠️ Sistemas Pre-Hechos</h2>
+
+        <div class="sistema-card">
+          <img
+            src="images/pricemanager-logo.jpg"
+            alt="Logo PriceManager"
+            class="logo-sistema"
+          />
+          <h3>📦 PriceManager – Sistema de Punto de Venta</h3>
+          <p>
+            <strong>PriceManager</strong> es un sistema de gestión para negocios
+            que buscan controlar sus ventas y stock sin necesidad de facturación
+            electrónica. Es simple, intuitivo y accesible para cualquier tipo de
+            comercio.
+          </p>
+          <ul>
+            <li>✅ Control de productos y stock en tiempo real.</li>
+            <li>✅ Registro de ventas y búsqueda por cliente o producto.</li>
+            <li>✅ Reportes básicos de movimientos.</li>
+            <li>✅ No requiere conexión a Internet permanente.</li>
+          </ul>
+          <p>
+            Es ideal para kioscos, almacenes, ferreterías, librerías y pequeños
+            negocios que necesitan una herramienta confiable para gestionar su
+            punto de venta de forma simple.
+          </p>
+          <div style="text-align: center; margin-top: 20px">
+            <a
+              href="https://wa.me/5493364626333?text=Hola,%20quiero%20más%20información%20sobre%20PriceManager"
+              target="_blank"
+              class="btn-wsp"
+              >Consultar por WhatsApp</a
+            >
+          </div>
+        </div>
+
+        <div class="sistema-card">
+          <img
+            src="images/hercules-logo.jpeg"
+            alt="Logo Hercules Gym Manager"
+            class="logo-sistema"
+          />
+          <h3>💪 Hercules Gym Manager – Sistema de Gestión de Gimnasios</h3>
+          <p>
+            <strong>Hercules Gym Manager</strong> está diseñado para facilitar
+            la administración de gimnasios, boxes de entrenamiento o centros
+            deportivos. Permite llevar el control de cuotas, asistencia y
+            rutinas de cada socio.
+          </p>
+          <ul>
+            <li>✅ Control de pagos y estado de cuotas.</li>
+            <li>✅ Registro de altas, bajas y suspensiones.</li>
+            <li>✅ Creación y asignación de rutinas personalizadas.</li>
+            <li>✅ Panel claro para gestionar a todos los socios.</li>
+          </ul>
+          <p>
+            Es la solución ideal para mantener la organización en gimnasios y
+            mejorar la atención a los socios con una gestión más profesional.
+          </p>
+          <div style="text-align: center; margin-top: 20px">
+            <a
+              href="https://wa.me/5493364626333?text=Hola,%20quiero%20más%20información%20sobre%20Hercules%20Gym%20Manager"
+              target="_blank"
+              class="btn-wsp"
+              >Consultar por WhatsApp</a
+            >
+          </div>
+        </div>
+
+        <h2>🌐 Páginas Web Simples</h2>
+        <p>
+          También desarrollamos páginas web institucionales, catálogos online o
+          sitios personales. Si querés tener presencia en Internet con una web
+          clara, moderna y responsive, te ayudamos a dar ese paso.
+        </p>
+      </div>
+
+      <div id="contacto" class="seccion" style="display: none">
+        <h1>Contacto</h1>
+        <p style="text-align: center">
+          ¿Tenés alguna consulta o necesitás un presupuesto? Completá el
+          formulario y te responderemos a la brevedad.
+        </p>
+
+        <form
+          class="form-contacto"
+          action="https://formsubmit.co/onsoporteinformatico@gmail.com"
+          method="POST"
+        >
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="name" required />
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="asunto">Asunto:</label>
+          <input type="text" id="asunto" name="_subject" required />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="message" rows="5" required></textarea>
+
+          <!-- Opcional: redirigir luego del envío -->
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/gracias.html"
+          />
+
+          <!-- Opcional: evitar el captcha de FormSubmit -->
+          <input type="hidden" name="_captcha" value="false" />
+
+          <button type="submit">Enviar Mensaje</button>
+        </form>
+        <div style="text-align: center; margin-top: 30px">
+          <a
+            href="https://wa.me/5493364626333?text=Hola%20ON%20Soporte%20Informático,%20necesito%20hacer%20una%20consulta."
+            class="btn-seguimiento"
+            target="_blank"
+          >
+            💬 Contactar por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div id="confian" class="seccion" style="display: none">
+        <h1>Empresas que confían en nosotros</h1>
+        <p style="text-align: center">
+          Estas son algunas de las empresas, comercios y organizaciones que
+          eligen nuestros servicios.
+        </p>
+
+        <div class="logo-grid">
+          <img src="images/Logo-Lodenacho.png" alt="Lo de Nacho" />
+          <img src="images/Logo-Beleme.jpg" alt="Beleme" />
+          <img src="images/Logo-Peretto.jpg" alt="Peretto" />
+          <img src="images/Logo-Metalcar.jpg" alt="Metalcar" />
+          <img src="images/Logo-Torrado.jpg" alt="Torrado" />
+          <img src="images/Logo-AguaPotable.jpeg" alt="Agua Potable" />
+          <img src="images/Logo-ClubLaEmilia.png" alt="Club La Emilia" />
+           <img src="images/Logo-BuzzioSagasti.jpg" alt="Club La Emilia" />
+          <!-- Agregá más según necesites -->
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
