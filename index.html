@@ -1,23 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ON Soporte Informatico</title>
-    <link href="css/estilos.css" rel="stylesheet" />
+    <title>ON Soporte Informático</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
   </head>
   <body>
-    <button id="toggle-menu" class="hamburguesa">&#9776;</button>
-    <div class="menu-lateral">
-      <div class="contenedor"> <img src="images/LogoON.jpg" alt="Producto 1" /></div>
-      <button onclick="mostrarSeccion('sobre')">Sobre Nosotros</button>
-      <button onclick="mostrarSeccion('reparaciones')">Reparaciones</button>
-      <button onclick="mostrarSeccion('productos')">Productos</button>
-      <button onclick="mostrarSeccion('impresion')">Impresión 3D</button>
-      <button onclick="mostrarSeccion('sistemas')">Sistemas</button>
-      <button onclick="mostrarSeccion('contacto')">Contacto</button>
-      <button onclick="mostrarSeccion('confian')">Empresas</button>
-    </div>
+    <header class="navbar">
+      <div class="navbar-left">
+        <img
+          src="images/LogoON.png"
+          alt="Logo ON Soporte"
+          class="logo-navbar"
+        />
+        <div class="redes">
+          <a href="https://wa.me/5493364626333" target="_blank"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/on_soporte_informatico"
+            target="_blank"
+            ><i class="bi bi-instagram"></i
+          ></a>
+        </div>
+      </div>
+
+      <button id="toggle-menu" class="hamburguesa">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <nav class="navbar-menu">
+        <button onclick="mostrarSeccion('sobre')">Sobre Nosotros</button>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Servicios <i class="bi bi-caret-down-fill flecha"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#" onclick="mostrarSeccion('reparaciones')"
+              ><i class="bi bi-tools"></i> Reparaciones</a
+            >
+            <a href="#" onclick="mostrarSeccion('impresion')"
+              ><i class="bi bi-printer"></i> Impresión 3D</a
+            >
+            <a href="#" onclick="mostrarSeccion('sistemas')"
+              ><i class="bi bi-pc-display"></i> Sistemas</a
+            >
+          </div>
+        </div>
+        <button onclick="mostrarSeccion('productos')">Productos</button>
+        <button onclick="mostrarSeccion('contacto')">Contacto</button>
+        <button onclick="mostrarSeccion('confian')">Empresas</button>
+      </nav>
+    </header>
 
     <div class="pantalla">
       <div id="sobre" class="seccion">
@@ -402,7 +441,7 @@
           <img src="images/Logo-Torrado.jpg" alt="Torrado" />
           <img src="images/Logo-AguaPotable.jpeg" alt="Agua Potable" />
           <img src="images/Logo-ClubLaEmilia.png" alt="Club La Emilia" />
-           <img src="images/Logo-BuzzioSagasti.jpg" alt="Club La Emilia" />
+          <img src="images/Logo-BuzzioSagasti.jpg" alt="Club La Emilia" />
           <!-- Agregá más según necesites -->
         </div>
       </div>
